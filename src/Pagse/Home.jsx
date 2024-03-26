@@ -1,7 +1,9 @@
+import { useLoaderData } from "react-router-dom";
 import Books from "../component/Books";
 import Card from "../component/Card";
 import Hero from "../component/Hero"
 const Home = () => {
+    const books = useLoaderData()
     return (
         <div>
             <div className="flex flex-col, items-center, justify-center">
@@ -9,8 +11,9 @@ const Home = () => {
 
             </div>
             <div>
-                <Books></Books>
+                <Books books={books} ></Books>
                 <Card></Card>
+                
 
             </div>
         </div>

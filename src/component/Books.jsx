@@ -1,25 +1,25 @@
-import { useEffect } from "react";
-import { useState } from "react";
+// import { useEffect } from "react";
+// import { useState } from "react";
 import Card from "./Card";
 
-const Books = () => {
-    const [jobs, setJobs] = useState([]);
+const Books = ({ books }) => {
 
-    useEffect(() => {
 
-        fetch('jobs.json')
-            .then(res => res.json())
-            .then(data => setJobs(data))
-    }, [])
-    console.log(jobs);
+    // useEffect(() => {
+
+    //     fetch('jobs.json')
+    //         .then(res => res.json())
+    //         .then(data => setJobs(data))
+    // }, [])
+    // console.log();
     return (
         <div>
             <div>
-                <h1 className="text-6xl  text-center font-bold">Books: {jobs.length}</h1>
+                <h1 className="text-6xl mt-4  text-center font-bold">Books</h1>
             </div>
-            <div>
+            <div className="grid mt-12 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 {
-                    jobs.map(job=> <Card key={job.id} job={job} > </Card>)
+                    books.map(job => <Card key={job.id} job={job} > </Card>)
                 }
             </div>
         </div>

@@ -10,9 +10,11 @@ function App() {
   return (
     <>
 
-      <Home></Home>
-      <Book></Book>
-      <Bookmark></Bookmark>
+      <div >
+        <Home></Home>
+        <Book></Book>
+        <Bookmark></Bookmark>
+      </div>
 
     </>
   )
