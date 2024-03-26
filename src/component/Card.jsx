@@ -1,14 +1,16 @@
 /* eslint-disable react/prop-types */
+
+import { CiStar } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
 const Card = ({ job }) => {
 
-    console.log(job);
+    // console.log(job);
 
     return (
         <div>
             <Link
-             to={job && `/book/${job.id}`} className="card  bg-base-100  shadow-xl ">
+                to={job && `/books/${job.id}`} className="card  bg-base-100  shadow-xl ">
                 <figure className="bg-base-300 p-8">
                     <img className="w-52 h-52" src={job?.image} />
                 </figure>
@@ -26,11 +28,11 @@ const Card = ({ job }) => {
                     <h2 className="card-title">{job?.bookName}</h2>
                     <p className="border-b-2 py-2">{job?.author}</p>
                     <div>
-                        <div className="flex justify-between">
+                        <div className="flex text-xl justify-between">
                             <p>{job?.category}</p>
                             <p className="flex items-center gap-2">
                                 <span>{job?.rating}</span>
-                                {/* <FcRating className="text-2xl "></FcRating> */}
+                                <CiStar />
                             </p>
                         </div>
                     </div>
