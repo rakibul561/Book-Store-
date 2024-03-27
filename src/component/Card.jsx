@@ -10,7 +10,7 @@ const Card = ({ job }) => {
     return (
         <div>
             <Link
-                to={job && `/books/${job.id}`} className="card  bg-base-100  shadow-xl ">
+                to={job && `/link/${job.id}`} className="card  bg-base-100  shadow-xl ">
                 <figure className="bg-base-300 p-8">
                     <img className="w-52 h-52" src={job?.image} />
                 </figure>

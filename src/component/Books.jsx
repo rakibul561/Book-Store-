@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // import { useEffect } from "react";
 // import { useState } from "react";
 import Card from "./Card";
@@ -5,13 +6,7 @@ import Card from "./Card";
 const Books = ({ books }) => {
 
 
-    // useEffect(() => {
 
-    //     fetch('jobs.json')
-    //         .then(res => res.json())
-    //         .then(data => setJobs(data))
-    // }, [])
-    // console.log();
     return (
         <div>
             <div>

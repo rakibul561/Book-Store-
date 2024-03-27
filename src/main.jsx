@@ -7,6 +7,9 @@ import Home from './Pagse/Home.jsx'
 import Book from './Pagse/Book.jsx'
 import Bookmark from './Pagse/Bookmark.jsx'
 import MainLaout from './Laouts/MainLaout.jsx'
+import { Toaster } from 'react-hot-toast';
+import Link from './Pagse/Link.jsx'
+// import Link from './Pagse/Link.jsx'
 
 const router = createBrowserRouter([
 
@@ -20,8 +23,12 @@ const router = createBrowserRouter([
         loader: () => fetch('jobs.json')
       },
       {
-        path: '/books/:id',
+        path: '/books',
         element: <Book></Book>,
+      },
+      {
+        path:'/link/:id',
+        element: <Link></Link>,
         loader: () => fetch('../jobs.json')
       },
 
@@ -29,6 +36,8 @@ const router = createBrowserRouter([
         path: '/bookmarks',
         element: <Bookmark></Bookmark>,
       },
+     
+      
     ]
   },
 
@@ -41,5 +50,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} ></RouterProvider>
+    <Toaster></Toaster>
   </React.StrictMode>,
 )

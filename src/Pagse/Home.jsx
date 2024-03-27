@@ -14,8 +14,6 @@ const Home = () => {
             <div>
                 <Books books={books} ></Books>
                 <Card></Card>
-
-
             </div>
         </div>
     );
