@@ -124,5 +124,48 @@
       "Read",
       "Wishlist"
     ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/5xWBJRC/kindpng-1064993.png",
+    "bookName": "Silent Shadows",
+    "author": "Isabella Nightshade",
+    "category": "Thriller",
+    "review": "Keeps you on the edge of your seat!",
+    "tags": [
+      "Suspense",
+      "Mystery",
+      "Intrigue"
+    ],
+    "totalPages": 280,
+    "publisher": "Shadow Publications",
+    "yearOfPublishing": 2024,
+    "rating": 4.6,
+    "buttons": [
+      "Read",
+      "Wishlist"
+    ]
+  },
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/wrW8YJw/kindpng-4945926-1.png",
+    "bookName": "The Enigmatic Island",
+    "author": "Elena Mystique",
+    "category": "Mystery",
+    "review": "A thrilling adventure full of twists and turns!",
+    "tags": [
+      "Adventure",
+      "Thriller",
+      "Suspense"
+    ],
+    "totalPages": 320,
+    "publisher": "Mystic Press",
+    "yearOfPublishing": 2023,
+    "rating": 4.5,
+    "buttons": [
+      "Read",
+      "Wishlist"
+    ]
   }
+
 ]

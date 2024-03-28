@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
 // import { Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
-import { CiLocationOn } from "react-icons/ci";
+
+import { Link } from "react-router-dom";
+
+// import { CiLocationOn } from "react-icons/ci";
 const CardWhiest = ({ job }) => {
     console.log(job);
 
@@ -27,7 +30,7 @@ const CardWhiest = ({ job }) => {
                         ))}
                     </div>
                     <div className="text-sm font-bold">
-                        <p> <CiLocationOn></CiLocationOn>Year of Publishing: {job.yearOfPublishing} </p>
+                        <p> Year of Publishing: {job.yearOfPublishing} </p>
                     </div>
                 </div>
 
@@ -40,7 +43,7 @@ const CardWhiest = ({ job }) => {
                 <div className="space-x-4 ">
                     <button className="btn text-[#328EFF] bg-[#b1c6e1] rounded-full"> Category: {job.category} </button>
                     <button className="btn text-[#FFAC33] bg-[#f2d2a6] rounded-full">Rating: {job.rating} </button>
-                    <button className="btn text-white bg-[#23BE0A] rounded-full">View Details </button>
+                    <Link to={job && `/link/${job.id}`} className="btn text-white bg-[#23BE0A] rounded-full">View Details </Link    >
 
                 </div>
             </div>

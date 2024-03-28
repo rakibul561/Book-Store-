@@ -10,7 +10,7 @@ const Hero = () => {
                         your bookshelf</h1>
                     <Link
                         to='/books'
-                        className="  font-bold hover:bg-yellow-500 rounded-xl text-white text-3xl p-8  bg-[#23BE0A]">View The List</Link>
+                        className="font-bold hover:bg-yellow-500 rounded-xl text-white text-3xl p-4  bg-[#23BE0A]">View The List</Link>
                 </div>
             </div>
         </div>

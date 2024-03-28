@@ -21,7 +21,7 @@ const Link = () => {
     return (
         <div className="flex justify-between mx-[135px] my-[80px] ">
             <div className="w-[48%] h-auto bg-base-300 p-10 rounded-lg  items-center">
-                <img className="w-[50%]" src={job.image} alt="" />
+                <img className="w-[70%] ml-9  " src={job.image} alt="" />
             </div>
             <div className="w-[48%] space-y-4">
                 <h2 className="text-4xl font-bold">{job.bookName}</h2>

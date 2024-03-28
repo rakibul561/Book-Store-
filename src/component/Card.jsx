@@ -10,9 +10,9 @@ const Card = ({ job }) => {
     return (
         <div>
             <Link
-                to={job && `/link/${job.id}`} className="card  bg-base-100  shadow-xl ">
-                <figure className="bg-base-300 p-8">
-                    <img className="w-52 h-52" src={job?.image} />
+                to={job && `/link/${job.id}`} className="card border border-indigo-300  shadow-xl ">
+                <figure className="bg-base-200 p-8">
+                    <img className="w-52  h-52" src={job?.image} />
                 </figure>
                 <div className="card-body">
                     <div className="flex justify-around">
@@ -39,6 +39,7 @@ const Card = ({ job }) => {
                 </div>
             </Link>
         </div>
+
     );
 };
 
